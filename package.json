@@ -1,0 +1,33 @@
+{
+  "name": "adjsbh-n12-workers-backend",
+  "version": "1.0.0",
+  "description": "backend for homework webworkers",
+  "main": "httpServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "npm install",
+    "start": "forever httpServer.js",
+    "watch": "forever -w httpServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gronik4/adjsbh-N12-workers-backend.git"
+  },
+  "author": "Gronik4",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gronik4/adjsbh-N12-workers-backend/issues"
+  },
+  "homepage": "https://github.com/Gronik4/adjsbh-N12-workers-backend#readme",
+  "dependencies": {
+    "forever": "^3.0.4",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-cors": "^0.0.16",
+    "koa-slow": "^2.1.0",
+    "koa-static": "^5.0.0"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}
